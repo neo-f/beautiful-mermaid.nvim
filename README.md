@@ -1,6 +1,6 @@
 # beautiful-mermaid.nvim
 
-Mermaid diagrams rendered as ASCII art in Markdown buffers.
+A Neovim plugin for rendering Mermaid diagrams as ASCII art in Markdown buffers.
 
 ![Normal preview](docs/ascii-normal.png)
 
@@ -34,7 +34,6 @@ With lazy.nvim:
 ```lua
 {
   "neo-f/beautiful-mermaid.nvim",
-  build = "npm ci --prefix tools/mermaid --ignore-scripts --no-audit --no-fund",
   dependencies = {
     "nvim-treesitter/nvim-treesitter",
   },
@@ -48,7 +47,7 @@ Install the Markdown parser if it is not already available. For example, with nv
 :TSInstall markdown
 ```
 
-The plugin bundles a small Node renderer. The build step runs `npm ci` in `tools/mermaid`; `node_modules` is not committed.
+lazy.nvim runs `build.lua` automatically after installing or updating the plugin. `node_modules` is not committed.
 
 ## Commands
 
@@ -104,7 +103,6 @@ For a local lazy.nvim checkout:
 ```lua
 {
   dir = "/path/to/beautiful-mermaid.nvim",
-  build = "npm ci --prefix tools/mermaid --ignore-scripts --no-audit --no-fund",
   opts = {},
 }
 ```
