@@ -1,0 +1,8 @@
+{
+  "name": "beautiful-mermaid-nvim",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "beautiful-mermaid": "1.1.3"
+  }
+}
