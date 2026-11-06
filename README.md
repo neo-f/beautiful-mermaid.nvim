@@ -32,13 +32,7 @@ Leave Insert mode or move outside the block to render the updated diagram.
 With lazy.nvim:
 
 ```lua
-{
-  "neo-f/beautiful-mermaid.nvim",
-  dependencies = {
-    "nvim-treesitter/nvim-treesitter",
-  },
-  opts = {},
-}
+{ "neo-f/beautiful-mermaid.nvim" }
 ```
 
 Install the Markdown parser if it is not already available. For example, with nvim-treesitter:
@@ -101,10 +95,7 @@ npm ci --prefix tools/mermaid --ignore-scripts --no-audit --no-fund
 For a local lazy.nvim checkout:
 
 ```lua
-{
-  dir = "/path/to/beautiful-mermaid.nvim",
-  opts = {},
-}
+{ dir = "/path/to/beautiful-mermaid.nvim" }
 ```
 
 ## License
